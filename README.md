@@ -8,7 +8,7 @@ All work is organized into folders and displayed on my GitHub Pages site.
 
 My course homepage is published at:
 
-**<https://josephparis28-hue.github.io/Joseph-Paris-Portfolio-/>**
+**<https://josephparis28-hue.github.io/Joseph-Paris-Portfolio>**
 
 This site links to all coursework completed during the semester.
 
