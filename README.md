@@ -14,7 +14,7 @@ This site links to all coursework completed during the semester.
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 The repository is organized into four main folders:
 Exercises/
