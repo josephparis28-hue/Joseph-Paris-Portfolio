@@ -1,31 +1,84 @@
-# A course portfolio repository template
+# Joseph Paris – Course Homepage
 
-This is a simple GitHub repository that serves as a template to generate your own course portfolio repository. 
+This repository contains my coursework for **CMPA 3304 – Fall 2026**.  
+It includes my exercises, assignments, projects, and optional discussion posts.  
+All work is organized into folders and displayed on my GitHub Pages site.
 
-## Quick Start
+## Live Website
 
-Select the green <kbd>Use this template</kbd> button. It should appear in the upper right portion of this page.
+My course homepage is published at:
 
-<hr>
+**<https://josephparis28-hue.github.io/Joseph-Paris-Portfolio-/>**
 
-## Questions and Answers
+This site links to all coursework completed during the semester.
 
-### Question 01
+---
 
-What does _course portfolio repository_ mean? 
+## 📁 Repository Structure
 
-### Answer 01
+The repository is organized into four main folders:
+Exercises/
+Assignments/
+Projects/
+Discussions/
 
-**Repository:**
+Each folder contains subfolders for individual coursework items.  
+Every subfolder includes its own `index.html` file.
 
-- A repository is a fancy word for saying "a folder where I track changes to files and folders within it." A repository (the folder with all the stuff in it) exists on your **local** computer (your desktop or laptop computer) AND on a **remote** computer (usually a powerful computer called a server, like GitHub!)."
-- After selecting the green <kbd>Use this template</kbd> button, you will name your new repository, it will be created under your GitHub username, you will configure it to automatically host your webpages, and then you can clone (get a copy of) your new repository for your local computer.
+### Exercises
 
- 
+Exercises/
+Exercise01/
+Exercise02/
+Exercise03/
+Exercise04/
+Exercise05/
+Exercise06/
+Exercise07/
+Exercise08/
+Exercise09/
 
-**Course portfolio repository:**
+### Assignments
 
-- A repository (the folder with all the stuff in it) that you create by using this template.
-- The "course portfolio" means the place you list all of your coursework.
-- The "course portfolio repository" contains a <kbd>index.html</kbd> file that serves as your Course Homepage.
+Assignments/
+Assignment01/
+Assignment02/
 
+### Projects
+
+Projects/
+Project01/
+Project02/
+
+### Discussions
+
+Discussions/
+Discussion01/
+Discussion02/
+Discussion03/
+
+---
+
+## About This Site
+
+This site is a handcrafted HTML portfolio created for CMPA 3304.  
+It follows the course instructions:
+
+- A simple homepage (`index.html`)
+- Relative links to each coursework folder
+- Plain HTML pages without styling
+- A “Back to Homepage” link on each page
+- A clear and organized folder structure
+- GitHub Pages deployment
+
+The purpose of this site is to practice basic web development skills,  
+learn semantic HTML, and build a personal course portfolio.
+
+---
+
+## Author
+
+**Joseph Paris**  
+GitHub: <https://github.com/josephparis28-hue>  
+Course: CMPA 3304  
+Semester: Fall 2026
