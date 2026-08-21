@@ -1,7 +1,7 @@
 # Joseph Paris – Course Homepage
 
 This repository contains my coursework for **CMPA 3304 – Fall 2026**.  
-It includes my exercises, assignments, projects, and optional discussion posts.  
+It includes my exercises, assignments, projects, and discussion posts.  
 All work is organized into folders and displayed on my GitHub Pages site.
 
 ## Live Website
