@@ -1,0 +1,52 @@
+/* Global site styling for Joseph Paris Portfolio */
+
+/* Reset */
+body, h1, h2, p, ol, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Page layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+/* Header, Main, Footer */
+header, main, footer {
+    text-align: center;
+}
+
+/* Ordered list */
+ol {
+    display: inline-block;
+    text-align: left;
+    margin-top: 15px;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+/* Links */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding-top: 10px;
+    border-top: 2px solid #ccc;
+    color: #555;
+}
