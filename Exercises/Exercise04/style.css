@@ -1,0 +1,104 @@
+/* Universal box model fix */
+* {
+  box-sizing: border-box;
+}
+
+/* Page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6eef5;
+  margin: 40px;
+  padding: 20px;
+}
+
+/* Card container */
+.card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 36px; /* increased for comfort */
+
+  /* Softer noise texture background */
+  background-color: #ffffff;
+  background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 1px);
+  background-size: 4px 4px;
+
+  border: 3px solid #4a90e2; /* softened border */
+  border-radius: 8px;
+
+  /* Softer bottom-right shadow */
+  box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.18);
+
+  /* Fade animation base state */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Fade-in animation */
+.card.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade-out animation */
+.card.fade-out {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Card heading */
+.card h1 {
+  color: #1a3a5f;
+  font-size: 32px;
+  margin-bottom: 16px;
+
+  /* Softer glow highlight per line */
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(255, 255, 255, 0.25) 45%,
+    rgba(255, 255, 255, 0.40) 55%,
+    transparent 100%
+  );
+  background-size: 100% 1.8em;
+  background-repeat: repeat-y;
+
+  /* Softer letter shadow */
+  text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.12);
+}
+
+/* Card paragraph */
+.card p {
+  color: #333333;
+  font-size: 18px;
+  line-height: 1.6; /* increased for readability */
+  margin: 0;
+
+  /* Softer glow highlight per line */
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(255, 255, 255, 0.25) 45%,
+    rgba(255, 255, 255, 0.40) 55%,
+    transparent 100%
+  );
+  background-size: 100% 1.8em;
+  background-repeat: repeat-y;
+
+  /* Softer letter shadow */
+  text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.10);
+}
+
+/* Back to homepage link */
+.back-home {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 18px;
+  color: #1a3a5f;
+  text-decoration: none;
+}
+
+.back-home:hover {
+  text-decoration: underline;
+}

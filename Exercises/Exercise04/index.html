@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joseph Paris</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <script>
+    // Fade in the card when the page loads
+        window.addEventListener("load", () => {
+        const card = document.querySelector(".card");
+        card.classList.add("fade-in");
+        });
+
+    // Fade out the card when clicking Back to Homepage
+        const backLink = document.querySelector(".back-home");
+
+        if (backLink) {
+            backLink.addEventListener("click", (e) => {
+            e.preventDefault();
+
+        const card = document.querySelector(".card");
+
+        // Start fade-out animation
+            card.classList.remove("fade-in");
+            card.classList.add("fade-out");
+
+        // Navigate AFTER animation finishes
+            setTimeout(() => {
+                window.location = backLink.href;
+                }, 1000); // matches CSS transition time
+                });
+            }
+
+</script>
+
+
+
+    <body>
+    <div class="card">
+        <h1>Joseph Paris</h1>
+        <p>
+        I am a web development student with a background in military service and security operations.
+        I enjoy building clean, accessible interfaces and learning modern developer tools. Outside of
+        school, I like make things better in my community. 
+        I am passionate about helping others succeed. 
+        I have currently seeking opportunities to apply my skills in a professional setting and contribute to meaningful projects.
+        </p>
+    </div>
+    </body>
+
+    <br>
+    <a class="back-home" href="../../index.html">Back to Homepage</a>
+</html>
