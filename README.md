@@ -17,26 +17,16 @@ This site links to all coursework completed during the semester.
 ## Repository Structure
 
 The repository is organized into four main folders:
-Exercises/
 Assignments/
+Exercises/
+Discussions/
 Projects/
 Discussions/
+week-04-exercise-01/
+week-04-exercise-02/
 
-Each folder contains subfolders for individual coursework items.  
+Each Assignment, Discussion, Exercise and Project folder contains subfolders for individual coursework items.  
 Every subfolder includes its own `index.html` file.
-
-### Exercises
-
-Exercises/
-Exercise01/
-Exercise02/
-Exercise03/
-Exercise04/
-Exercise05/
-Exercise06/
-Exercise07/
-Exercise08/
-Exercise09/
 
 ### Assignments
 
@@ -44,18 +34,36 @@ Assignments/
 Assignment01/
 Assignment02/
 
-### Projects
-
-Projects/
-Project01/
-Project02/
-
 ### Discussions
 
 Discussions/
 Discussion01/
 Discussion02/
 Discussion03/
+
+### Exercises
+
+Exercises/
+Exercise01/
+Exercise02/
+Exercise03/
+Exercise06/
+Exercise07/
+Exercise08/
+Exercise09/
+
+### Projects
+
+Projects/
+Project01/
+Project02/
+
+Each folder contains an index.html, style.css and multiple images.png
+
+### Week 04 Exercises
+
+week-04-exercise-01/
+week-04-exercise-02/
 
 ---
 
