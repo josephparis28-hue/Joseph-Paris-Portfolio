@@ -23,6 +23,7 @@ body {
 /* Top Navigation Bar */
 .top-nav {
     width: 100%;
+    margin-bottom: 48px; 
     background-color: #0b3d91;
     padding: 14px 0;
     text-align: center;
@@ -74,7 +75,7 @@ body {
 .top-button a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #555;
+    background-color: #0b3d91;
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -83,15 +84,16 @@ body {
 }
 
 .top-button a:hover {
-    background-color: #333;
+    background-color: #062a63;
 }
 
 /* Main Content Container */
 main {
-    max-width: 850px;
+    max-width: 900px;
+    margin: 0 auto;
     width: 90%;
-    padding: 40px;
-    margin-top: 40px;
+    padding: 48px 40px;
+    margin-top: 64px;
     background: white;
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 8px;
@@ -104,13 +106,13 @@ h1 {
     font-size: 48px;
     line-height: 1.1;
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
     text-align: center;
 }
 
 h2 {
     font-size: 28px;
-    margin-top: 48px;
+    margin-top: 64px;
     margin-bottom: 20px;
     border-bottom: 2px solid black;
     padding-bottom: 12px;
@@ -118,7 +120,8 @@ h2 {
 
 /* Paragraphs */
 p {
-    margin-bottom: 24px;
+    margin-bottom: 32
+    px;
     font-size: 18px;
 }
 
@@ -173,11 +176,11 @@ p {
 
 /* Footer */
 footer {
-    margin-top: 48px;
+    margin-top: 64px;
     text-align: center;
     font-size: 14px;
     color: #555;
-    padding-top: 20px;
+    padding-top: 24px;
     border-top: 1px solid rgba(0, 0, 0, 0.25);
 }
 

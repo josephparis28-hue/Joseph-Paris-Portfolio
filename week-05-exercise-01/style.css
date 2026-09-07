@@ -1,0 +1,287 @@
+/* ================================
+   Global Reset & Theme Variables
+================================ */
+
+:root {
+    --primary: #0066CC;
+    --primary-dark: #004499;
+    --accent: #0e6027;
+    --gray-dark: #1F2937;
+    --gray-medium: #374151;
+    --gray-light: #6B7280;
+    --white: #ffffff;
+
+    /* Navbar + layout theme */
+    --navy: #0b3d91;
+    --navy-dark: #062a63;
+    --shadow: rgba(0, 0, 0, 0.15);
+
+    /* spacing scale */
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space-md: 24px;
+    --space-lg: 32px;
+    --space-xl: 48px;
+    --space-xxl: 64px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    line-height: 2;
+    background-color: #fafafa;
+    color: var(--gray-dark);
+    padding: 0;
+
+    /* subtle paper texture */
+    background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+    background-repeat: repeat;
+}
+
+
+/* ================================
+   Top Navigation Bar
+================================ */
+
+.top-nav {
+    width: 100%;
+    background-color: var(--navy);
+    padding: 14px 0;
+    text-align: center;
+    margin-bottom: var(--space-xl);
+    box-shadow: 0 2px 6px var(--shadow);
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 20px;
+    padding: 8px 14px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.top-nav a:hover {
+    background-color: var(--navy-dark);
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   Main Container
+================================ */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: var(--space-xxl);
+    padding: var(--space-xl) var(--space-lg);
+    background-color: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1em;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: var(--space-xl);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: var(--gray-light);
+    margin-bottom: var(--space-xl);
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    padding-bottom: var(--space-sm);
+    margin-top: var(--space-xxl);
+    margin-bottom: var(--space-md);
+}
+
+.button-section {
+    padding: var(--space-xl);
+    background-color: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    margin-bottom: var(--space-xl);
+    border-radius: 6px;
+
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.button-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.button-section p {
+    font-size: 16px;
+    margin-bottom: var(--space-lg);
+}
+
+
+/* ================================
+   Buttons — Unified Theme
+================================ */
+
+button {
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0;
+    padding: 16px 32px;
+}
+
+
+/* Button 01 — Color Fade */
+.button-01 {
+    background-color: var(--primary);
+    color: var(--white);
+    border: 2px solid var(--primary);
+    transition: background-color 0.25s ease-in,
+                color 0.25s ease-in,
+                border-color 0.25s ease-in;
+}
+
+.button-01:hover {
+    background-color: var(--white);
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+
+/* Button 02 — Lift and Shadow */
+.button-02 {
+    background-color: var(--accent);
+    color: var(--white);
+    border: 2px solid var(--accent);
+    transition: transform 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+                box-shadow 0.25s ease-out;
+}
+
+.button-02:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Button 03 — Slide Up + Letter Spacing */
+.button-03 {
+    background-color: var(--gray-medium);
+    color: var(--white);
+    border: 2px solid var(--gray-medium);
+    transition: transform 0.18s ease-out,
+                background-color 0.3s ease,
+                letter-spacing 0.2s ease;
+}
+
+.button-03:hover {
+    transform: translateY(-6px);
+    background-color: var(--gray-dark);
+    letter-spacing: 1px;
+}
+
+
+/* Button 04 — Glow Border + Thicker Border */
+.button-04 {
+    background-color: var(--white);
+    color: var(--gray-medium);
+    border: 2px solid var(--gray-medium);
+    transition: border-color 0.35s ease-in-out,
+                border-width 0.35s ease-in-out,
+                box-shadow 0.4s ease-in-out,
+                font-weight 0.2s linear;
+}
+
+.button-04:hover {
+    border-color: var(--primary);
+    border-width: 3px;
+    box-shadow: 0 0 12px rgba(0, 102, 204, 0.6);
+    font-weight: bold;
+}
+
+
+/* Button 05 — Shadow Pulse + Text Glow */
+.button-05 {
+    background-color: var(--gray-light);
+    color: var(--white);
+    border: 2px solid var(--gray-light);
+    transition: transform 0.22s ease-out,
+                box-shadow 0.28s ease-out,
+                text-shadow 0.25s ease-out;
+}
+
+.button-05:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    text-shadow: 0 0 4px rgba(255,255,255,0.6);
+}
+
+
+/* Button 06 — Invert Colors + Bold */
+.button-06 {
+    background-color: var(--white);
+    color: var(--gray-dark);
+    border: 2px solid var(--gray-dark);
+    transition: background-color 0.2s ease-in,
+                color 0.2s ease-in,
+                font-weight 0.2s ease-in;
+}
+
+.button-06:hover {
+    background-color: var(--gray-dark);
+    color: var(--white);
+    font-weight: bold;
+}
+
+
+/* ================================
+   Back Buttons + Footer
+================================ */
+
+.top-button,
+.back-button {
+    text-align: center;
+    margin-top: var(--space-lg);
+}
+
+.top-button a,
+.back-button a {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: var(--navy);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.top-button a:hover,
+.back-button a:hover {
+    background-color: var(--navy-dark);
+}
+
+footer {
+    margin-top: var(--space-xxl);
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    padding-top: var(--space-md);
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
