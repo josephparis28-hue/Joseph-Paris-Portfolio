@@ -173,11 +173,12 @@ main > p {
     border-radius: 6px;
     font-size: 18px;
     font-weight: bold;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.25s ease, transform 0.25s ease;
 }
 
 .back-button a:hover {
     background-color: #062a63;
+    transform: translateY(-2px);
 }
 
 /* Top Button */
@@ -194,11 +195,12 @@ main > p {
     text-decoration: none;
     border-radius: 6px;
     font-size: 16px;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.25s ease, transform 0.25s ease;
 }
 
 .top-button a:hover {
     background-color: #062a63;
+    transform: translateY(-2px);
 }
 
 /* Footer */

@@ -1,0 +1,379 @@
+/* =========================================
+   Global Reset & Theme Variables
+========================================= */
+
+:root {
+    --primary: #0B3D91;        /* Deep Blue */
+    --primary-dark: #062A63;  /* Navy */
+    --accent: #009688;        /* Teal */
+    --accent-dark: #00796B;   /* Dark Teal */
+
+    --gray-dark: #1F2937;
+    --gray-medium: #374151;
+    --gray-light: #6B7280;
+
+    --white: #FFFFFF;
+
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space-md: 24px;
+    --space-lg: 32px;
+    --space-xl: 48px;
+    --space-xxl: 64px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    line-height: 1.8;
+    background-color: #fafafa;
+    color: var(--gray-dark);
+    padding-bottom: var(--space-xxl);
+}
+
+/* =========================================
+   Header + Navigation
+========================================= */
+
+.site-header {
+    text-align: center;
+    padding: var(--space-sm) var(--space-sm);
+}
+
+.site-title {
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: var(--space-xs);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: var(--space-lg);
+}
+
+.site-nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--primary);
+    padding: var(--space-xs) var(--space-sm);
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.site-nav a:hover {
+    color: var(--accent);
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   Mission Statement
+========================================= */
+
+.mission {
+    text-align: center;
+    font-size: 22px;
+    padding: var(--space-xl) var(--space-md);
+    font-style: italic;
+    color: var(--gray-medium);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   Featured Skills Bar
+========================================= */
+
+.featured-skills ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: var(--space-lg);
+    padding: var(--space-md);
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+/* =========================================
+   Page Navigation Bar
+========================================= */
+
+.page-nav {
+    background-color: var(--primary);
+    padding: var(--space-sm) 0;
+    margin-bottom: var(--space-xl);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.page-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: var(--space-lg);
+}
+
+.page-nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 18px;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: 4px;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.page-nav a:hover {
+    background-color: var(--accent-dark);
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   Section Divider
+========================================= */
+
+.divider {
+    width: 100%;
+    max-width: 900px;
+    height: 2px;
+    background-color: rgba(0, 150, 136, 0.25);
+    margin: var(--space-xl) auto;
+}
+
+/* =========================================
+   Section Layout
+========================================= */
+
+.section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--space-xl) var(--space-md);
+}
+
+.section h2 {
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: var(--space-md);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: var(--space-sm);
+}
+
+/* =========================================
+   Skills Grid
+========================================= */
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+    margin-top: var(--space-md);
+}
+
+.skill-card {
+    flex: 1 1 calc(50% - var(--space-lg));
+    background-color: var(--white);
+    border: 1px solid rgba(0,0,0,0.25);
+    padding: var(--space-lg);
+    border-radius: 6px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px var(--primary-dark);
+    border-color: var(--accent);
+}
+
+.skill-card h3 {
+    margin-bottom: var(--space-sm);
+}
+
+/* =========================================
+   Even Project Card Alignment
+========================================= */
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+    align-items: stretch;
+}
+
+.project-card {
+    flex: 1 1 calc(33% - var(--space-lg));
+    background-color: var(--white);
+    border: 1px solid rgba(0,0,0,0.25);
+    padding: var(--space-md);
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--gray-dark);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 420px;
+    text-align: center;
+}
+
+.project-card img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: var(--space-sm);
+}
+
+.project-card h3 {
+    min-height: 40px;
+    margin-bottom: var(--space-xs);
+}
+
+.project-card p {
+    min-height: 80px;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: var(--space-sm);
+    transition: transform 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+    box-shadow: 0 10px 20px var(--primary-dark);
+}
+
+.project-card:hover img {
+    transform: scale(1.03);
+}
+
+.project-card h3 {
+    margin-bottom: var(--space-xs);
+}
+
+/* =========================================
+   Back to Top / Back to Home Buttons
+========================================= */
+
+.back-to-top,
+.back-to-home {
+    text-align: center;
+    margin-top: var(--space-lg);
+}
+
+.back-to-top a,
+.back-to-home a {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: var(--accent);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.back-to-top a:hover,
+.back-to-home a:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-3px);
+}
+
+/* =========================================
+    Contact Email Link
+========================================= */
+
+.contact-link {
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: none;
+    transition: 
+        color 0.25s ease,
+        transform 0.25s ease,
+        text-shadow 0.25s ease,
+        letter-spacing 0.25s ease;
+}
+
+.contact-link:hover {
+    color: var(--primary-dark);
+    transform: translateY(-3px) scale(1.08);
+    text-shadow: 0 3px 10px var(--primary-dark);
+    letter-spacing: 1px; /* Subtle expansion */
+}
+
+/* =========================================
+   Footer
+========================================= */
+
+.site-footer {
+    text-align: center;
+    padding: var(--space-xl) var(--space-md);
+    margin-top: var(--space-xl);
+    border-top: 1px solid rgba(0,0,0,0.25);
+    font-size: 14px;
+}
+
+.site-footer a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.site-footer a:hover {
+    color: var(--primary-dark);
+}
+
+/* =========================================
+   Responsive Design
+========================================= */
+
+@media (max-width: 900px) {
+    .projects-grid {
+        flex-direction: column;
+    }
+
+    .project-card {
+        flex: 1 1 100%;
+    }
+
+    .skills-grid {
+        flex-direction: column;
+    }
+
+    .skill-card {
+        flex: 1 1 100%;
+    }
+
+    .site-title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .site-nav ul {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+
+    .site-title {
+        font-size: 32px;
+    }
+
+    .section {
+        padding: var(--space-lg) var(--space-sm);
+    }
+}
