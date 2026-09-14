@@ -17,10 +17,18 @@ body {
   padding: 32px 0;
 }
 
+/* Center main content */
 main {
   max-width: 800px;
   width: 100%;
   padding: 0 16px;
+  text-align: center;
+}
+
+/* Keep lists readable */
+main ul {
+  text-align: left;
+  display: inline-block;
 }
 
 h1 {
@@ -72,6 +80,7 @@ code {
   border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
+/* Simple vertical navigation bar design */
 .nav-simple {
   position: fixed;
   left: 32px;
@@ -95,19 +104,15 @@ code {
   color: #0066CC;
   text-decoration: none;
   background-color: #fafafa;
-  border: 1px solid rgba(0, 0, 0, 0.25);
+  border: 2px solid rgba(0, 0, 0, 0.25);
   transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.nav-simple a:hover {
-  background-color: #0066CC;
-  color: #ffffff;
 }
 
 .nav-simple+main {
   margin-left: 232px;
 }
 
+/* Horizontal navigation bar design */
 .nav-horizontal {
   position: fixed;
   top: 0;
@@ -139,23 +144,82 @@ code {
   transition: color 0.3s ease;
 }
 
-.nav-horizontal a:hover {
-  color: #0066CC;
-}
-
 .nav-horizontal+main {
   margin-top: 80px;
 }
 
-.nav-custom {}
+/* Centered navigation bar design */
+.nav-centered {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 32px;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+}
 
-.nav-custom ul {}
+.nav-centered ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
 
-.nav-custom li {}
+.nav-centered a {
+  display: block;
+  padding: 16px 0;
+  color: #0066CC;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
 
-.nav-custom a {}
+.nav-centered + main {
+  margin-top: 96px;
+}
 
-.nav-custom a:hover {}
+nav a.current {
+  color: midnightblue;
+  font-weight: bold;
+  border-bottom: 2px solid midnightblue;
+  text-shadow: 0 0 4px rgba(25, 25, 112, 0.25);
+}
+
+nav a {
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: royalblue;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  padding-bottom: 18px;
+}
+
+nav a:focus {
+  outline: 2px solid #0066CC;
+  outline-offset: 4px;
+}
+
+nav {
+  background: linear-gradient(to bottom, #ffffff, #f2f2f2);
+}
 
 @media (width >=480px) {}
 
