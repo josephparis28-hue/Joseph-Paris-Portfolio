@@ -1,4 +1,4 @@
-# Joseph Paris – Course Homepage
+# Joseph Paris – CMPA 3304 Course Portfolio
 
 This repository contains my coursework for **CMPA 3304 – Fall 2026**.  
 It includes my exercises, assignments, projects, and discussion posts.  
@@ -17,53 +17,57 @@ This site links to all coursework completed during the semester.
 ## Repository Structure
 
 The repository is organized into four main folders:
-Assignments/
-Exercises/
-Discussions/
-Projects/
-Discussions/
-week-04-exercise-01/
-week-04-exercise-02/
-week-05-exercise-01/
+
+    Assignments/
+    Exercises/
+    Discussions/
+    Projects/
+    Discussions/
+    - Folders named week XX exercise XX have been added for coursework.
 
 Each Assignment, Discussion, Exercise and Project folder contains subfolders for individual coursework items.  
 Every subfolder includes its own `index.html` file.
 
 ### Assignments
 
-Assignments/
-Assignment01/
-Assignment02/
+    Assignments/
+        /Assignment01
+        /Assignment02
 
 ### Discussions
 
-Discussions/
-Discussion01/
-Discussion02/
-Discussion03/
+    Discussions/
+        /Discussion01
+        /Discussion02
+        /Discussion03
 
-Exercises/
-    Exercise01/
-    Exercise02/
-    Exercise03/
-    Exercise04/
-    Exercise05/
+### Exercises
+
+    Exercises/
+        /Exercise01
+        /Exercise02
+        /Exercise03
+        /Exercise04
+        /Exercise05
 
 ### Projects
 
-Projects/
-Project01/
-Project02/
+    Projects/
+        /Project01
+        /Project02
 
 ### Folders Added During Coursework
 
-week-04-exercise-01/
+    week-04-exercise-01/
 
-week-04-exercise-02/
+    week-04-exercise-02/
 
-week-05-exercise-01/
+    week-05-exercise-01/
 
-week-05-exercise-01/
+    week-05-exercise-01/
+        /css
+        /gallery
+        /projects
 
 ---
 
@@ -80,7 +84,7 @@ It follows the course instructions:
 - GitHub Pages deployment
 
 The purpose of this site is to practice basic web development skills,  
-learn semantic HTML, and build a personal course portfolio.
+learn semantic HTML and build a personal course portfolio.
 
 ---
 
@@ -90,3 +94,5 @@ learn semantic HTML, and build a personal course portfolio.
 GitHub: <https://github.com/josephparis28-hue>  
 Course: CMPA 3304  
 Semester: Fall 2026
+
+Last Update: September 15, 2026
